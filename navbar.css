@@ -1,0 +1,31 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    padding: 15px;
+    position: fixed;
+    filter: drop-shadow(5px -0px 0 rgba(255, 0, 0, 1))
+    drop-shadow(0 5px 0 rgba(0, 255, 255, 1));
+  }
+
+  .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tabs a {
+    margin: 0 30px 0 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s;
+    filter: drop-shadow(2px 2px 0.5px rgb(0, 0, 0));
+  }
+
+  .tabs a:hover {
+    animation: glitchtext 2000ms linear infinite;
+    font-weight: bold;
+    font-size: 22px;
+  }
