@@ -89,18 +89,18 @@ body {
   height: 92.5vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   text-align: left;
 }
 
 .heroContent {
-  border-radius: 10px;
+  border-radius: 20px 0 0 20px;
   color: white;
   font-size: 35px;
   padding: 10px 200px 10px 10px;
   background-color: rgb(41, 41, 41);
+  margin-bottom: 350px;
 }
 
 .heroTitle {
@@ -151,34 +151,15 @@ body {
   animation: glitchsvg 1000ms none infinite;
 }
 
-.workContainer {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 150px 300px 300px 300px;
-}
-
-.workMatchbox {
-  background: url(pastaMatchbox.jpg) no-repeat center;
-  background-size: contain;
-  width: 500px;
-  height: 300px;
-  margin-top: 50px;
-}
-
-.workMatchbox:hover {
-  background: url(pastaMatchbox.jpg) no-repeat center;
-  background-size: contain;
-  filter: brightness(85%);
-  animation: glitchsvg 1000ms none infinite;
+#work {
+  scroll-behavior: smooth;
 }
 
 .workTitle {
   font-size: 50px;
   color: white;
   text-shadow: 5px -2px 0 rgb(255, 0, 0), -5px 2px 0 rgba(0, 255, 255, 1);
+  text-align: center;
 }
 
 .matchboxContainer {
@@ -196,10 +177,19 @@ body {
 }
 
 .pastaMatchbox {
-  background: url(pastaMatchbox.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
   height: 500px;
+  position: relative;
+}
+
+.pastaMatchbox img {
+  width: 500px;
+  height: auto;
+}
+
+.pastaMatchbox:hover img {
+  filter: brightness(25%);
+  transition: 0.5s ease-in-out;
 }
 
 .pastaMatchbox:hover .overlay {
@@ -213,9 +203,12 @@ body {
 }
 
 .overlay {
+  position: absolute;
   opacity: 0;
-  transition: 0.3s ease;
-  background-color: #008cba;
+  transition: 0.5s ease-in-out;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 0; bottom: 50%; right: 0;
 }
 
 .anubisMatchbox {
@@ -223,10 +216,20 @@ body {
   background-size: contain;
   width: 500px;
   height: 500px;
+  color: white;
 }
 
 .anubisMatchbox:hover {
-  filter: brightness(75%);
+  filter: brightness(50%);
+}
+
+.anubisMatchbox:hover h1 {
+  opacity: 1;
+  filter: brightness(100%) !important;
+}
+
+.anubisMatchbox h1 {
+  opacity: 0;
 }
 
 .ferrariMatchbox {
@@ -341,7 +344,7 @@ body {
 }
 
 .gaslyWebsiteImg {
-  background: url(gaslywebsite.png) no-repeat center;
+  background: url(gaslywebsite.jpg) no-repeat center;
   background-size: contain;
   width: 750px;
   height: 400px;
@@ -436,4 +439,50 @@ svg {
 
 .contactTitle {
   text-decoration: underline;
+}
+
+.heroCarousel {
+  width: 750px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-right: 225px;
+  margin-left: 175px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.activeSlide {
+  opacity: 1;
+}
+
+.pastaSlide {
+  background-image: url(pastaMatchbox.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 500px;
+}
+
+.gaslySlide {
+  background-image: url(gaslywebsite.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 750px;
+}
+
+.hughesSlide {
+  background-image: url(hughesPoster.png);
+  background-size: contain;
+  background-position: center;
+  height: 500px;
 }
