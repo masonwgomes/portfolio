@@ -188,7 +188,7 @@ body {
 }
 
 .pastaMatchbox:hover img {
-  filter: brightness(25%);
+  filter: brightness(50%);
   transition: 0.5s ease-in-out;
 }
 
@@ -199,7 +199,9 @@ body {
 .pastaMatchboxText {
   color: white;
   font-size: 40px;
-  position: absolute;
+  position: center;
+  justify-content: left;
+  margin-left: 10px;
 }
 
 .overlay {
@@ -208,7 +210,10 @@ body {
   transition: 0.5s ease-in-out;
   margin: auto;
   position: absolute;
-  top: 50%; left: 0; bottom: 50%; right: 0;
+  top: 50%;
+  left: 0;
+  bottom: 50%;
+  right: 0;
 }
 
 .anubisMatchbox {
@@ -348,7 +353,8 @@ body {
   background-size: contain;
   width: 750px;
   height: 400px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .bioPageContainer {
@@ -486,3 +492,128 @@ svg {
   background-position: center;
   height: 500px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    /* height:100vh; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "heroContainer"
+      "iconContainer"
+      "bioContainer"
+      "workContainer"
+      "footer";
+  }
+
+  .tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    top: 0px;
+  }
+
+  .heroContainer {
+    grid-area: heroContainer;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+  }
+
+  .footerContainer {
+    grid-area: footer;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #work {
+    grid-area: workContainer;
+  }
+
+
+  .heroContent {
+    margin-top: 500px;
+    margin-right: 250px;
+  }
+
+  .iconContainer {
+    grid-area: iconContainer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    grid-gap: 75px;
+    height: 500px
+  }
+
+  .bioContainer{
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 20px 0 20px;
+  }
+
+  .workContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #work{
+    width: 100vw;
+    align-items: center;
+  }
+
+  .workTitle{
+    width: 100vw;
+    margin-top: 75px;
+  }
+
+  .matchboxContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posterContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drawingContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linkContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-gap: 50px;
+  }
+
+  .footerContainer{
+    margin-top: 50px;
+  }
+}
+
