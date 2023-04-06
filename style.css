@@ -98,7 +98,7 @@ body {
   border-radius: 20px 0 0 20px;
   color: white;
   font-size: 35px;
-  padding: 10px 200px 10px 10px;
+  padding: 10px 450px 10px 10px;
   background-color: rgb(41, 41, 41);
   margin-bottom: 350px;
 }
@@ -109,6 +109,7 @@ body {
   animation: glitchTitle 8000ms linear infinite;
   display: block;
   margin-left: 20px;
+  width: 750px;
 }
 
 .heroSubtitle {
@@ -330,7 +331,7 @@ body {
 
 .linkContainer {
   color: white;
-  margin-top: 75px;
+  margin-top: 175px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,6 +493,24 @@ svg {
   background-position: center;
   height: 500px;
 }
+
+.cardWebsitePreview{
+  height: 950px;
+  width: 1500px;
+  margin-top: 50px;
+  margin-bottom: 125px;
+}
+
+.gaslyWebsitePreview{
+  height: 950px;
+  width: 1500px;
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+/* .gaslyWebsiteLink{
+  margin-top: 100px;
+} */
 
 @media only screen and (max-width: 1200px) {
   .container {
