@@ -120,7 +120,7 @@ body {
 
 .bioContainer {
   text-align: center;
-  margin: 75px 500px 75px 500px;
+  margin: 75px 500px 100px 500px;
 }
 
 .bioTitle {
@@ -192,7 +192,7 @@ body {
 }
 
 .pastaMatchbox:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -207,6 +207,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .overlay {
@@ -228,6 +229,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .anubisMatchbox img {
@@ -236,7 +238,7 @@ body {
 }
 
 .anubisMatchbox:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -251,6 +253,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .ferrariMatchbox {
@@ -268,7 +271,7 @@ body {
 }
 
 .ferrariMatchbox:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -283,6 +286,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .posterContainer {
@@ -299,6 +303,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hughesPoster img {
@@ -307,7 +312,7 @@ body {
 }
 
 .hughesPoster:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -322,6 +327,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .gaslyPoster {
@@ -339,7 +345,7 @@ body {
 }
 
 .gaslyPoster:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -354,6 +360,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .sargeantPoster {
@@ -371,7 +378,7 @@ body {
 }
 
 .sargeantPoster:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -386,6 +393,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .drawingContainer {
@@ -410,7 +418,7 @@ body {
 }
 
 .chapterDrawing:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -425,6 +433,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .mugDrawing {
@@ -434,6 +443,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .mugDrawing img {
@@ -442,7 +452,7 @@ body {
 }
 
 .mugDrawing:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -457,6 +467,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .moaiDrawing {
@@ -474,7 +485,7 @@ body {
 }
 
 .moaiDrawing:hover img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   transition: 0.5s ease-in-out;
 }
 
@@ -489,6 +500,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .linkContainer {
@@ -647,7 +659,7 @@ svg {
   background-image: url(gaslywebsite.jpg);
   background-size: contain;
   background-position: center;
-  width: 750px;
+  width: 500px;
 }
 
 .hughesSlide {
@@ -710,6 +722,7 @@ svg {
 
   .heroContainer {
     grid-area: heroContainer;
+
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -723,15 +736,21 @@ svg {
     width: 100vw;
   }
 
-  #work {
-    grid-area: workContainer;
+
+  .heroTitle{
+    font-size: 50px;
+  }
+  
+  .heroSubtitle{
+    font-size: 30px;
   }
 
-
-  .heroContent {
-    margin-top: 500px;
-    margin-right: 250px;
-  }
+  /* .heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
 
   .iconContainer {
     grid-area: iconContainer;
