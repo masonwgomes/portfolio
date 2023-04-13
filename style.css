@@ -181,6 +181,9 @@ body {
   width: 500px;
   height: 500px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pastaMatchbox img {
@@ -201,8 +204,9 @@ body {
   color: white;
   font-size: 40px;
   position: center;
-  justify-content: left;
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
@@ -218,35 +222,67 @@ body {
 }
 
 .anubisMatchbox {
-  background: url(anubisMatchbox.png) no-repeat center;
-  background-size: contain;
   width: 500px;
   height: 500px;
-  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.anubisMatchbox:hover {
+.anubisMatchbox img {
+  width: auto;
+  height: 500px;
+}
+
+.anubisMatchbox:hover img {
   filter: brightness(50%);
+  transition: 0.5s ease-in-out;
 }
 
-.anubisMatchbox:hover h1 {
+.anubisMatchbox:hover .overlay {
   opacity: 1;
-  filter: brightness(100%) !important;
 }
 
-.anubisMatchbox h1 {
-  opacity: 0;
+.anubisMatchboxText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ferrariMatchbox {
-  background: url(ferrariMatchbox.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ferrariMatchbox img {
+  width: auto;
   height: 500px;
 }
 
-.ferrariMatchbox:hover {
-  filter: brightness(75%);
+.ferrariMatchbox:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.ferrariMatchbox:hover .overlay {
+  opacity: 1;
+}
+
+.ferrariMatchboxText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .posterContainer {
@@ -257,36 +293,99 @@ body {
 }
 
 .hughesPoster {
-  background: url(hughesPoster.png) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hughesPoster img {
+  width: auto;
   height: 500px;
 }
 
-.hughesPoster:hover {
-  filter: brightness(75%);
+.hughesPoster:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.hughesPoster:hover .overlay {
+  opacity: 1;
+}
+
+.hughesPosterText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gaslyPoster {
-  background: url(gaslyPoster.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gaslyPoster img {
+  width: auto;
   height: 500px;
 }
 
-.gaslyPoster:hover {
-  filter: brightness(75%);
+.gaslyPoster:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.gaslyPoster:hover .overlay {
+  opacity: 1;
+}
+
+.gaslyPosterText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sargeantPoster {
-  background: url(sargeantPoster.png) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sargeantPoster img {
+  width: auto;
   height: 500px;
 }
 
-.sargeantPoster:hover {
-  filter: brightness(75%);
+.sargeantPoster:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.sargeantPoster:hover .overlay {
+  opacity: 1;
+}
+
+.sargeantPosterText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drawingContainer {
@@ -297,36 +396,99 @@ body {
 }
 
 .chapterDrawing {
-  background: url(chapterDrawing.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chapterDrawing img {
+  width: auto;
   height: 500px;
 }
 
-.chapterDrawing:hover {
-  filter: brightness(75%);
+.chapterDrawing:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.chapterDrawing:hover .overlay {
+  opacity: 1;
+}
+
+.chapterDrawingText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mugDrawing {
-  background: url(mugDrawing.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
   height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mugDrawing:hover {
-  filter: brightness(75%);
+.mugDrawing img {
+  width: 500px;
+  height: auto;
+}
+
+.mugDrawing:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.mugDrawing:hover .overlay {
+  opacity: 1;
+}
+
+.mugDrawingText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .moaiDrawing {
-  background: url(moaiDrawing.jpg) no-repeat center;
-  background-size: contain;
   width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moaiDrawing img {
+  width: auto;
   height: 500px;
 }
 
-.moaiDrawing:hover {
-  filter: brightness(75%);
+.moaiDrawing:hover img {
+  filter: brightness(50%);
+  transition: 0.5s ease-in-out;
+}
+
+.moaiDrawing:hover .overlay {
+  opacity: 1;
+}
+
+.moaiDrawingText {
+  color: white;
+  font-size: 40px;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .linkContainer {
@@ -343,11 +505,12 @@ body {
   font-size: 50px;
   font-weight: bold;
   text-decoration-line: underline;
-}
-
-.link:hover {
   animation: glitchtext 2000ms linear infinite;
 }
+
+/* .link:hover {
+  animation: glitchtext 2000ms linear infinite;
+} */
 
 .gaslyWebsiteImg {
   background: url(gaslywebsite.jpg) no-repeat center;
